@@ -3,7 +3,11 @@ import PropTypes from "prop-types"
 // import { StaticQuery, graphql } from "gatsby"
 
 // import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
+// import './bootstrap.min.css'
+// import '../sass/layout.scss'
+import { createGlobalStyle } from 'styled-components'
+import Navbar from './globals/navbar/Navbar'
 
 // const Layout = ({ children }) => (
 //   <StaticQuery
@@ -40,8 +44,26 @@ import "./layout.css"
 // )
 
 const Layout = ({ children }) => {
-  return <React.Fragment>{children}</React.Fragment>
+  return <React.Fragment>
+  <GlobalStyle />
+  <Navbar />
+  {children}
+  </React.Fragment>
 }
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Open Sans', sans-sarif;
+    color: #262626;
+    background: #fff;
+  }
+
+`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

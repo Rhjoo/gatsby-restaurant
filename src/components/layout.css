@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainOrange: #f15025;
+}
+body {
+  font-family: 'Caveat', cursive;
+  color: black;
+  background: white;
+}
+
+
 /* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
