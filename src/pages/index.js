@@ -6,6 +6,8 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import { HomeHeader } from '../utils'
+import img from '../images/bcg/homeBcg.jpeg'
 
 const IndexPage = () => (
   <Layout>
@@ -19,7 +21,7 @@ const IndexPage = () => (
     <Link to="/page-2/">Go to page 2</Link> */}
     {/* <h3>Hello from Gatsby</h3>
     <h3> Lets go for a <FaBeer />? </h3> */}
-    <h3>this is the home page</h3>
+    <HomeHeader img={img}>hello from home header</HomeHeader>
   </Layout>
 )
 
