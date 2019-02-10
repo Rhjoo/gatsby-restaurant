@@ -6,7 +6,7 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import { HomeHeader } from '../utils'
+import { HomeHeader, Banner, BannerButton } from '../utils'
 import img from '../images/bcg/homeBcg.jpeg'
 
 const IndexPage = () => (
@@ -21,7 +21,13 @@ const IndexPage = () => (
     <Link to="/page-2/">Go to page 2</Link> */}
     {/* <h3>Hello from Gatsby</h3>
     <h3> Lets go for a <FaBeer />? </h3> */}
-    <HomeHeader img={img}>hello from home header</HomeHeader>
+    <HomeHeader img={img}>
+      <Banner title="Eatery" subtitle="55 Main St, Santa Monica, CA">
+        <BannerButton style={{ margin: '2rem auto'}}>
+          menu
+        </BannerButton>
+      </Banner>
+    </HomeHeader>
   </Layout>
 )
 
