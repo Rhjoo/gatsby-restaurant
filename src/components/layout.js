@@ -8,6 +8,7 @@ import PropTypes from "prop-types"
 // import '../sass/layout.scss'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from './globals/navbar/Navbar'
+import Footer from './globals/Footer'
 
 // const Layout = ({ children }) => (
 //   <StaticQuery
@@ -48,6 +49,7 @@ const Layout = ({ children }) => {
   <GlobalStyle />
   <Navbar />
   {children}
+  <Footer />
   </React.Fragment>
 }
 
